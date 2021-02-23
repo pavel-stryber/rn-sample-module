@@ -1,0 +1,19 @@
+{
+  "name": "rnsamplemodule",
+  "version": "1.0.0",
+  "description": "Some sample package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavel-stryber/rn-sample-module.git"
+  },
+  "author": "Pavel Lapin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavel-stryber/rn-sample-module/issues"
+  },
+  "homepage": "https://github.com/pavel-stryber/rn-sample-module#readme"
+}
