@@ -1,19 +1,20 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import RnSampleModule from 'rn-sample-module';
-
+import RnSampleModule from '../../src';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
+  const [deviceId, setDeviceId] = React.useState<string>();
   React.useEffect(() => {
-    RnSampleModule.multiply(3, 7).then(setResult);
+    (async () => {
+      const id = await RnSampleModule.getDeviceId();
+      setDeviceId(id);
+    })();
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Device id: {deviceId}</Text>
     </View>
   );
 }

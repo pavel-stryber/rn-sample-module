@@ -1,8 +1,12 @@
+import UIKit;
+
 @objc(RnSampleModule)
 class RnSampleModule: NSObject {
 
-    @objc(multiply:withB:withResolver:withRejecter:)
-    func multiply(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
-        resolve(a*b)
+    @objc(getDeviceId:withRejecter:)
+    func getDeviceId(resolve: RCTPromiseResolveBlock,
+                     reject:RCTPromiseRejectBlock) -> Void {
+        let id = UIDevice.current.identifierForVendor?.uuidString
+        resolve(id);
     }
 }

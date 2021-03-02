@@ -1,7 +1,7 @@
 import { NativeModules } from 'react-native';
 
 type RnSampleModuleType = {
-  multiply(a: number, b: number): Promise<number>;
+  getDeviceId(): Promise<string>;
 };
 
 const { RnSampleModule } = NativeModules;
