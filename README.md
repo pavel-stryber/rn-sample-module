@@ -1,21 +1,23 @@
-# rn-sample-module
+# rn-stryber-sample-module
 
 Sample module
 
 ## Installation
 
 ```sh
-npm install rn-sample-module
+npm install rn-stryber-sample-module
+cd ios
+pod install
 ```
 
 ## Usage
 
 ```js
-import RnSampleModule from "rn-sample-module";
+import RnSampleModule from "rn-stryber-sample-module";
 
 // ...
 
-const result = await RnSampleModule.multiply(3, 7);
+const deviceId = await RnSampleModule.getDeviceId();
 ```
 
 ## Contributing
