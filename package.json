@@ -1,6 +1,6 @@
 {
   "name": "rn-stryber-sample-module",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Sample module",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
